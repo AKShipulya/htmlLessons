@@ -1,4 +1,4 @@
-* {
+﻿* {
     box-sizing: border-box;
 }
 
@@ -8,10 +8,16 @@ body {
     color: #000000; /*указание, какой будет цвет текста*/
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
-    max-width: 1110px;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .none {
@@ -39,7 +45,7 @@ body {
     background-position: center;
 }
 
-.header-titele {
+.header-title {
     margin: 0;
     margin-bottom: 25px;
     font-weight: 700;
@@ -167,13 +173,13 @@ body {
     line-height: 1.3;
 }
 
-.fotter-copyright-name {
+.footer-copyright-name {
     font-weight: 700;
     font-size: 28px;
     margin-bottom: 15px;
 }
 
-.fotter-copyright p {
+.footer-copyright p {
     margin: 0;
     margin-bottom: 15;
     font-size: 16px;
@@ -290,3 +296,30 @@ body {
     background-color: #275BEC;
     color: white;
 }
+
+/* МЕДИАЗАПРОСЫ - ОБРАЗЕЦ
+.block {
+    width: 800px;
+    height: 400px;
+    background-color: purple;
+}
+
+/*адаптация под мобильные устройства*/
+
+
+
+/*если размер экрана менее 800 пикселей - будет работать этот код, если больше - будет работать код "по-умолчанию"
+@media (max-width: 800px) {
+    .block {
+        width: 400px;
+        background-color: coral;
+    }
+}
+
+@media (max-width: 600px) {
+    .block {
+        width: 300;
+        background-color: blue;
+    }
+}
+*/
